@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Nov  3 19:53:07 2023
+# Process ID: 62212
+# Current directory: D:/FPGA/OV5640/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent55320 D:\FPGA\OV5640\Zybo-Z7-20-pcam-5c-2019.1\vivado_proj\Zybo-Z7-20-pcam-5c.xpr
+# Log file: D:/FPGA/OV5640/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/vivado.log
+# Journal file: D:/FPGA/OV5640/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/OV5640/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/FPGA/OV5640/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+write_hw_platform -fixed -include_bit -force -file D:/FPGA/OV5640/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/system_wrapper.xsa
+write_hw_platform -fixed -include_bit -force -file D:/FPGA/OV5640/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/system_wrapper.xsa
